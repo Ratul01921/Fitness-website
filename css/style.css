@@ -11,11 +11,11 @@ body{
     background-color: #000000dd;
 }
 
-.header, .main{
+.header, section, .footer-section, .bmi-container{
     max-width: 1060px;
-    min-height: 600px;
+    /* min-height: 600px; */
     margin: 40px auto;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 10px;
 }
 .header{
@@ -159,12 +159,202 @@ body{
     font-weight: 400;
 }
 
+/* change habit section start here */
+.change-habit-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    margin-bottom: 50px; 
+}
+.change-habit-content h2{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.change-habit-content p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.change-habit-img-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
 
+}
 
+.change-habit-card img{
+    border-radius: 50%;
+    width: 100%;
+}
+.change-habit-card h3{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.change-habit-card p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+/* run section start here */
+.run-section-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    border-radius: 18px;
+    background-color: #f6f2f21c;
+}
 
+.run-section-img img{
+    max-width: 366px;
+    /* width: 100%; */
+    border-radius: 18px;
+}
 
+.run-section-content h3{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.run-section-content p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* BMI Calculator section start */
+.bmi-content h3{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.bmi-content table{
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+.bmi-content td, th{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px;
+}
 
+/* our team section start here */
+.team-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.team-content h3{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.team-content p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.team-img-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    /* justify-items:flex-start; */
+    gap: 20px;
+    background-color: #f6f2f21c;
+    margin-top: 40px;
+    padding: 20px;
+    
 
+}
+.team-img{
+    position: relative;
+}
+.team-img img{
+    height: 272px;
+    align-self: stretch;
+    max-width: 100%;
+    border-radius: 18px;
+    
+    
+    
+}
+.img-child-content{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+
+}
+.img-child-content h3{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.img-child-content p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+.footer, .bmi-section{
+    background-color: #f6f2f21c; 
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 100%; */
+
+}
+footer-brand{
+    max-width: 40%;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%;
+    gap: 100px;
+    margin-bottom: 80px;
+}
+.footer-brand p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.footer-content h3{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.footer-content p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.footer-copyright-massge{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 
@@ -204,5 +394,33 @@ body{
         right: 100px;
         padding: 0;
         
+    }
+    /* change habit section start here */
+    .change-habit-img-content{
+        grid-template-columns: repeat(1, 1fr); 
+        justify-content: center; 
+        align-items: center;
+    
+    }
+    /* run section start here */
+    .run-section-container{
+        flex-direction: column;
+    }
+    .run-section-img img{
+        max-width: 287px;
+    
+    }
+    .team-img-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer section start here */
+    .footer-content, 
+    .footer-container
+    {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+
     }
 }
