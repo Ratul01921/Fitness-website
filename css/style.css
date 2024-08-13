@@ -304,6 +304,7 @@ body{
 }
 .bmi-calculation input, select ::placeholder{
     background-color: #f6f2f21c;
+    color:rgba(255, 255, 255, 0.50) ;
 }
 .bmi-calculation  select{
     color:rgba(255, 255, 255, 0.50) ;
@@ -358,7 +359,7 @@ body{
 .team-img img{
     height: 272px;
     align-self: stretch;
-    max-width: 100%;
+    width: 100%;
     border-radius: 18px;
     
     
@@ -472,7 +473,13 @@ body{
         grid-template-columns: repeat(1, 1fr); 
         justify-content: center; 
         align-items: center;
+        text-align: center;
     
+    }
+    .change-habit-card{
+        width: 270px;
+        text-align: center;
+
     }
     /* run section start here */
     .run-section-container{
@@ -494,5 +501,24 @@ body{
         align-items: start;
         gap: 30px;
 
+    }
+    /* bmi section start */
+    .bmi-container{
+        width: 394px;
+        /* height: 772px; */
+        flex-direction: column;
+    }
+    .bmi-calculator{
+        width: 354px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 34px;
+    }
+    .bmi-calculation input, select{
+        width: 180px;
+        /* color:rgba(255, 255, 255, 0.50) ; */
+    }
+    .bmi-content{
+        width: 394px;
     }
 }
