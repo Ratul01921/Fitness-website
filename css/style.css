@@ -11,7 +11,7 @@ body{
     background-color: #000000dd;
 }
 
-.header, section, .footer-section, .bmi-container {
+.header, section, .footer-section, .bmi-container, .plan-container {
     max-width: 1060px;
     /* min-height: 600px; */
     margin: 40px auto;
@@ -324,6 +324,60 @@ body{
     text-align: center;
 }
 
+/* special part membership section start */
+.plan-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plan-content h3{
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.plan-content p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.plan-date{
+    border-radius: 15px;
+    padding: 10px 40px;
+   
+}
+
+.plan-slide{
+    border-radius: 15px;
+    background-color: #f6f2f21c;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px 25px;
+}
+.plan-description{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.plan-slide h3, h2 {
+    color:  #000;
+    font-size: 1rem;
+    font-weight: 600; 
+    margin-bottom: 15px;
+}
+.plan-slide p, .list-item2{
+    color:  #000;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.plan-dollar{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
 /* our team section start here */
 .team-content{
     display: flex;
@@ -382,7 +436,7 @@ body{
     font-weight: 400;
 
 }
-.footer, .bmi-section{
+.footer, .bmi-section, .plan-container{
     background-color: #f6f2f21c; 
 }
 .footer-container{
