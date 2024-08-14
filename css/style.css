@@ -543,7 +543,7 @@ body{
         max-width: 287px;
     
     }
-    .team-img-content{
+    .team-img-content, .plan-description{
         grid-template-columns: repeat(1, 1fr);
     }
     /* footer section start here */
@@ -575,4 +575,5 @@ body{
     .bmi-content{
         width: 394px;
     }
+    
 }
